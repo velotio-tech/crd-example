@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"blog.velotio.com/crd-blog/v1alpha1"
+	"blog.velotio.com/crd-example/v1alpha1"
 	"github.com/golang/glog"
 	apiextension "k8s.io/apiextensions-apiserver/pkg/client/clientset/clientset"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

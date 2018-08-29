@@ -4,7 +4,7 @@ VERSION = 0.1
 TAG = $(VERSION)
 PREFIX = crd/velotio-blog
 
-DOCKER_RUN = docker run --rm -v $(shell pwd)/../:/go/src/blog.velotio.com/ -w /go/src/blog.velotio.com/crd-blog/
+DOCKER_RUN = docker run --rm -v $(shell pwd)/../:/go/src/blog.velotio.com/ -w /go/src/blog.velotio.com/crd-example/
 	GOLANG_CONTAINER = golang:1.8
 	DOCKERFILE = Dockerfile
 
