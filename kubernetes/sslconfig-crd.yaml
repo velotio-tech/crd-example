@@ -1,0 +1,28 @@
+apiVersion: "apiextensions.k8s.io/v1beta1"
+kind: "CustomResourceDefinition"
+metadata:
+  name: "sslconfigs.blog.velotio.com"
+spec:
+  group: "blog.velotio.com"
+  version: "v1alpha1"
+  scope: "Namespaced"
+  names:
+    plural: "sslconfigs"
+    singular: "sslconfig"
+    kind: "SslConfig"
+  validation:
+    openAPIV3Schema:
+      required: ["spec"]
+      properties:
+        spec:
+          required: ["cert","key","domain"]
+          properties:
+            cert:
+              type: "string"
+              minimum: 1
+            key:
+              type: "string"
+              minimum: 1
+            domain:
+              type: "string"
+              minimum: 1  

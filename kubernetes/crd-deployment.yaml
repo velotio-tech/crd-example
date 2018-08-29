@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: crd-blog
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: crd-blog
+    spec:
+      containers:
+      - name: crd-blog
+        image: akash125/crdblog
+        imagePullPolicy: IfNotPresent

@@ -1,0 +1,9 @@
+apiVersion: "blog.velotio.com/v1alpha1"
+kind: "SslConfig"
+metadata:
+  name: "sslconfig-velotio.com"
+spec:
+  cert: "my cert file"
+  key : "my private  key"
+  domain: "*.velotio.com"
+  provider: "digicert"
